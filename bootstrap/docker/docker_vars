@@ -1,4 +1,4 @@
-key_name: "ansible-tower"
+key_name: "awx new"
 instance_type: "t2.micro"
 image: "ami-0ebbf2179e615c338"
 count: 1
