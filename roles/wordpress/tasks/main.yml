@@ -3,7 +3,7 @@
     - name: Install necessary packages
       package: 
         name: "{{item}}"
-        state: latest
+        state: present2
       with_items:
         - wget
         - unzip
@@ -38,7 +38,7 @@
     - name: Restart httpd 
       systemd:
         name: httpd
-        state: started
+        state: stoped
         enabled: yes
       become: yes
       become_method: sudo
